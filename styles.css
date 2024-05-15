@@ -1,1 +1,11 @@
 /* styles */
+
+.app-download-icon-container {
+    height: 36px;
+    width: 120px;
+}
+
+.card-img {
+    width: 400px;
+    height: 300px;
+}
