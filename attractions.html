@@ -1,28 +1,116 @@
 <!-- Attactions Page  -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Homepage for the theme park website!">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Author name"> <!-- Will update this-->
-    <meta name="keywords" content="keywords keywords"> <!-- Will update this-->
-    <title>The Nexus | A Space-Themed Amusement Park</title> <!-- Will update this-->
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Homepage for the theme park website!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Author name" />
+    <!-- Will update this-->
+    <meta name="keywords" content="keywords keywords" />
+    <!-- Will update this-->
+    <title>The Nexus | A Space-Themed Amusement Park</title>
+    <!-- Will update this-->
+    <link rel="stylesheet" href="styles.css" />
     <script src="index.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <!-- Name, Logo-->
-        <h1>The Nexus.</h1>
-        <img src="" alt="logo">
-        <nav>
-            <ul>
-                <li><a href="./attractions.html">Explore</a></li>
-                <li><a href="#">Map</a></li>
-                <li><a href="./plan.html">Plan a Trip</a></li>
-            </ul>
-        </nav>
+      <!-- Name, Logo-->
+      <h1>The Nexus.</h1>
+      <img src="" alt="logo" />
+      <div class="quick-links">
+        <a href="#">Open or not</a>
+        <!-- Will update this with dynamic open, or closed, open at...-->
+        <a href="#">The weather right now</a>
+        <!-- Will update this with dynamic weather-->
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./attractions.html">Explore</a></li>
+          <li><a href="#">Map</a></li>
+          <li><a href="./plan.html">Plan a Trip</a></li>
+        </ul>
+      </nav>
     </header>
-</body>
+    <div>
+        <h1>Attractions</h1>
+        <div class="attractions-container">
+            <div class="attraction">
+            <img
+                src="https://cdn.openart.ai/stable_diffusion/a6ff03653bfc5dd33b4b6503e9ebafbebc399033_2000x2000.webp"
+                alt=""
+            />
+            <h2>Space Hill</h2>
+            <p>
+                Dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            </div>
+            <div class="attraction">
+            <img 
+                src="https://cdn.openart.ai/stable_diffusion/a6ff03653bfc5dd33b4b6503e9ebafbebc399033_2000x2000.webp"
+                alt=""
+            />
+            <h2>Alien Invasion</h2>
+            <p>
+                Dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            </div> 
+            <!-- Add more attractions here -->
+    </div>
+  </body>
+  <footer>
+    <div class="footer-logo-container">
+      <img src="" alt="footer-logo" />
+    </div>
+    <div class="visit-section">
+      <h4>Visit Theme Park</h4>
+      <div>
+        <ul>
+          <li>Opening Times</li>
+          <li>Ticket Prices</li>
+          <li>Attractions</li>
+          <li>Tours</li>
+        </ul>
+      </div>
+      <div class="social-links-container">
+        <h4>Follow our Socials!</h4>
+        <div class="social-link social-img">
+          <a href="">
+            <svg></svg>
+            <!--An svg graphic for the social icon-->
+          </a>
+        </div>
+        <div class="social-link social-img">
+          <a href="">
+            <svg></svg>
+            <!--An svg graphic for the social icon-->
+          </a>
+        </div>
+        <div class="social-link social-img">
+          <a href="">
+            <svg></svg>
+            <!--An svg graphic for the social icon-->
+          </a>
+        </div>
+      </div>
+      <div class="app-container">
+        <h4>Download Our App</h4>
+        <div>
+          <div class="app-download-icon-container">
+            <img
+              src="https://dg2kj7uuq7g1w.cloudfront.net/-/media/images/tivoli%20responsiv/icons/apple_app_store.svg"
+              alt=""
+            />
+          </div>
+          <div class="app-download-icon-container">
+            <img
+              src="	https://dg2kj7uuq7g1w.cloudfront.net/-/media/images/tivoli%20responsiv/icons/google-play-badge.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </html>
