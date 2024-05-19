@@ -1,282 +1,384 @@
-<!-- Main Homepage  -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="description" content="Homepage for the theme park website!" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Author name" />
+
     <!-- Will update this-->
     <meta name="keywords" content="keywords keywords" />
-    <!-- Will update this-->
+
+    <!-- Tab Title-->
     <title>The Nexus | A Space-Themed Amusement Park</title>
-    <!-- Will update this-->
+
+    <!-- Styles and JS-->
     <link rel="stylesheet" href="styles.css" />
     <script src="index.js"></script>
-  </head>
-  <body>
-    <header>
-      <!-- Name, Logo-->
-      <a href="./index.html">
-        <h1>The Nexus.</h1>
-      </a>
-      <img src="" alt="logo" />
-      <div class="quick-links">
-        <a href="#">Open or not</a>
-        <!-- Will update this with dynamic open, or closed, open at...-->
-        <a href="#">The weather right now</a>
-        <!-- Will update this with dynamic weather-->
-      </div>
-      <nav>
-        <ul>
-          <li><a href="./attractions.html">Explore</a></li>
-          <li><a href="#">Map</a></li>
-          <li><a href="./plan.html">Plan a Trip</a></li>
-          <li><a href="#">About us</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
+
+</head>
+
+<body>
+    <!-- Sidebar navigation -->
+    <nav class="side-nav">
+        <!-- Name, Logo-->
+        <div class="nav-logo">
+            <a href="./index.html">
+                <img src="" alt="logo" />
+                <h1>The Nexus</h1>
+            </a>
+        </div>
+
+        <!-- Main navigation items -->
+        <div class="quick-links">
+            <ul>
+                <li><a href="./attractions.html">Explore</a></li>
+                <li><a href="#">Map</a></li>
+                <li><a href="#">Plan a Trip</a></li>
+                <!-- Moved into attractions page. Now acts as a link to the section.-->
+                <li><a href="#">About us</a></li>
+            </ul>
+        </div>
+
+        <!--Bottom part of nav bar  -->
+        <div class="nav-footer">
+            <!-- Logo -->
+            <a href="./index.html">
+                <img src="" alt="logo">
+            </a>
+
+            <!-- Social media links -->
+            <div class="social-media-bar">
+                <!-- Will insert social media logos later -->
+                <a href="#">
+                    <img src="" alt="logo">
+                </a>
+
+                <a href="#">
+                    <img src="" alt="logo">
+                </a>
+
+                <a href="#">
+                    <img src="" alt="logo">
+                </a>
+            </div>
+
+            <!-- Important links -->
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Terms and conditions</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- Main site body -->
+    <div class="main-content">
+      <!-- Announcements header -->
+      <header>
+          <p>Place any header announcements here</p>
+      </header>
+
       <!-- Hero Section -->
       <section class="hero">
-        <img
-          src="./images/Designer.jpeg"
-          alt=""
-        />
-        <!--Placeholder image-->
-        <h1>Experience an Odyssey through the Cosmos</h1>
-        <h3>Explore the cosmos today!</h3>
-        <div class="cta">
-          <button>Book Tickets!</button>
-        </div>
+          <img src="./images/Designer.jpeg" alt="">
+          <div class="hero-card">
+              <h1>Experience an Odyssey through the Cosmos</h1>
+              <p>This is the body tect for the hero card. In here we will describe the main call to action of this
+                  page</p>
+              <button type="button" class="hero-button">Book Tickets!</button>
+          </div>
       </section>
 
-      <!-- Featured Section -->
+      <!-- News Section -->
       <section class="featured">
-        <h1>See What's New!</h1>
-        <div class="card">
-          <img
-            class="card-img"
-            src="./images/galactic rollercoaster.jpeg"
-            alt="card-img"
-          />
-          <div class="card-content">
-            <div class="card-content-title">
-              <h3>The Galactic Rollercoaster</h3>
-            </div>
-            <div class="card-content-text">
-              <p>A thrilling journey through space featuring loops, twists and turns.</p>
-            </div>
-            <div class="cta">
-              <button>Explore</button>
-            </div>
-          </div>
+        <div class="section-title">
+          <h2>See what's new</h2>
         </div>
-        <div class="card">
-          <img
-            class="card-img"
-            src="https://pics.craiyon.com/2023-10-23/3b6b222632c8461394d2256c0d0fb604.webp"
-            alt="card-img"
-          />
-          <div class="card-content">
-            <div class="card-content-title">
-              <h3>Starman: A Planetary Orbit by SpaceX</h3>
-            </div>
-            <div class="card-content-text">
-              <p>Journey on the SpaceX Falcon Shuttle into orbit around the Earth. New to the Nexus.</p>
-            </div>
-            <div class="cta">
-              <button>Explore</button>
-            </div>
+          <!-- Cards section -->
+          <div class="cards-carousel">
+              <div class="carousel-inner">
+                  <!-- Card item -->
+                  <div class="carousel-item">
+                      <div class="card">
+                          <div class="card-img">
+                              <img src="./images/MetaAI(4).jpg" alt="">
+                          </div>
+                          <div class="card-content">
+                              <h3 class="card-heading">The Galactic Rollercoaster</h3>
+                              <p class="card-text">A thrilling journey through space featuring loops, twists and
+                                  turns.
+                              </p>
+                              <button type="button" class="card-button">Learn more</button>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Card item -->
+                  <div class="carousel-item">
+                      <div class="card">
+                          <div class="card-img">
+                              <img src="https://pics.craiyon.com/2023-10-23/3b6b222632c8461394d2256c0d0fb604.webp" alt="">
+                          </div>
+                          <div class="card-content">
+                              <h3 class="card-heading">The Galactic Rollercoaster</h3>
+                              <p class="card-text">A thrilling journey through space featuring loops, twists and
+                                  turns.
+                              </p>
+                              <button type="button" class="card-button">Learn more</button>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Card item -->
+                  <div class="carousel-item">
+                      <div class="card">
+                          <div class="card-img">
+                              <img src="./images/MetaAI.jpg" alt="">
+                          </div>
+                          <div class="card-content">
+                              <h3 class="card-heading">The Galactic Rollercoaster</h3>
+                              <p class="card-text">A thrilling journey through space featuring loops, twists and
+                                  turns.
+                              </p>
+                              <button type="button" class="card-button">Learn more</button>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Carousel Nav -->
+                  <div class="carousel-control-prev" href="#prev"></div>
+                  <div class="carousel-control-next" href="#next"></div>
+              </div>
           </div>
+      </section>
+
+      <!-- Map Section -->
+      <section class="park-map">
+        <!--Section Title -->
+        <div class="section-title">
+          <h2>Interactive Park Map</h2>
+          <img src="./images/Icons/map_24dp_FILL0_wght400_GRAD0_opsz24.svg">
         </div>
-        <div class="card">
-          <img
-            class="card-img"
-            src="https://pics.craiyon.com/2023-10-23/3b6b222632c8461394d2256c0d0fb604.webp"
-            alt="card-img"
-          />
-          <div class="card-content">
-            <div class="card-content-title">
-              <h3>Summer Events</h3>
-            </div>
-            <div class="card-content-text">
-              <p>Vacation ideas? See what events are coming on at the Nexus this summer!</p>
-            </div>
-            <div class="cta">
-              <button>Explore</button>
-            </div>
+        
+          <!-- Map options NEED TO UPDATE-->
+          <aside class="map-options">
+              <ul>
+                  <li>Option seclect</li>
+                  <li>Option select</li>
+                  <li>Option toggle</li>
+                  <li>Option checkbox</li>
+                  <li>Option slider</li>
+              </ul>
+          </aside>
+
+          <!-- Main map section -->
+          <div class="interactive-map">
+              <!-- Interactive map -->
+              <div class="map-img">
+                  <img src="./images/MetaAI_Map (1).jpg" alt="image">
+              </div>
+              <!-- Map information bar -->
+              <div class="map-key">
+                  <ul>
+                      <li>Rides</li>
+                      <li>Games</li>
+                      <li>Restrooms</li>
+                      <li>Tours</li>
+                      <li>Refreshments</li>
+                  </ul>
+              </div>
           </div>
+
+      </section>
+
+      <!-- Site cards Section -->
+      <section class="featured">
+        <div class="section-title">
+          <h2>Important Pages </h2>
+          <p>This section allows for quick site navigation. It contains the site pages and sections most visited.
+          </p>
+        </div>
+          <!-- Cards section -->
+        <div class="cards-carousel">
+            <div class="carousel-inner">
+                <!-- Card item -->
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="card-heading">Page introduction</h3>
+                            <p class="card-text">This is a card which links to pages that are visited most
+                                often. It allows quick and easy navigation
+                            </p>
+                            <button type="button" class="card-button">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card item -->
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="card-heading">Page introduction</h3>
+                            <p class="card-text">This is a card which links to pages that are visited most
+                                often. It allows quick and easy navigation
+                            </p>
+                            <button type="button" class="card-button">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card item -->
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="card-heading">Page introduction</h3>
+                            <p class="card-text">This is a card which links to pages that are visited most
+                                often. It allows quick and easy navigation
+                            </p>
+                            <button type="button" class="card-button">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Nav -->
+                <div class="carousel-control-prev" href="#prev"></div>
+                <div class="carousel-control-next" href="#next"></div>
+            </div>
         </div>
       </section>
 
-      <!-- Map Section  -->
-      <section class="map">
-        <h1>Explore OUR RIDES!</h1>
-        <h3>Hava a look at an interactive map of the NEXUS</h3>
-        <div class="map-icon">
-          <img
-            src="https://i.pinimg.com/736x/29/d3/ef/29d3ef16e6132e83b212c5f10c855ba7.jpg"
-            alt="map-logo"
-          />
-        </div>
-        <aside class="filter">
-          <ul>
-            <li>Rides</li>
-            <li>Tours</li>
-            <li>Events</li>
-            <li>Refreshments</li>
-          </ul>
-        </aside>
-        <div class="map-image">
-          <img src="" alt="map-img" />
-        </div>
-        <div class="events"></div>
-      </section>
-
-      <!-- Cards Section  -->
-      <section class="cards">
-        <div class="card">
-          <img
-            class="card-img"
-            src="https://static.wikia.nocookie.net/cowboybebop/images/c/ca/SpaceLand.png/revision/latest?cb=20121127101842"
-            alt="card-img"
-          />
-          <div class="card-content">
-            <div class="card-content-title">
-              <h3>Attractions</h3>
-            </div>
-            <div class="card-content-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="cta">
-              <button>Explore</button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            class="card-img"
-            src="https://media.istockphoto.com/id/1179332911/photo/carefree-seniors-having-fun-on-rollercoaster-at-amusement-park.jpg?s=612x612&w=0&k=20&c=96YmWe8XzHy8wyQSEX2_NmOwNrUFXezQYzQ2xg4f2_U="
-            alt="card-img"
-          />
-          <div class="card-content">
-            <div class="card-content-title">
-              <h3>Tickets</h3>
-            </div>
-            <div class="card-content-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="cta">
-              <button>Explore</button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            class="card-img"
-            src="https://pics.craiyon.com/2023-10-23/3b6b222632c8461394d2256c0d0fb604.webp"
-            alt="card-img"
-          />
-          <div class="card-content">
-            <div class="card-content-title">
-              <h3>Upcoming Events</h3>
-            </div>
-            <div class="card-content-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="cta">
-              <button>Explore</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact Form Section  -->
+      <!-- Contact Section -->
       <section class="contact">
-        <div class="contact-container">
-          <h2>The NEXUS.</h2>
-          <h2>Got a Question?</h2>
-          <form action="" method="post">
-            <ul>
-              <li>
-                <label for="first_name">First Name</label>
-                <input type="text" id="name" name="user_name">
-              </li>
-              <li>
-                <label for="last_name">Last Name</label>
-                <input type="text" id="" name="">
-              </li>
-              <li>
-                <label for="email">Email address</label>
-                <input type="email" id="" name>
-              </li>
-              <li>
-                <label for="msg">Message</label>
-                <textarea name="" id=""></textarea>
-              </li>
-              <li>
-                <input type="submit" value="Submit">
-              </li>
-            </ul>
-          </form>
-        </div>
+          <div class="contact-card">
+              <!-- Contact info and social links -->
+              <aside class="contact-info">
+                  <!-- Name, Logo-->
+                  <div class="nav-logo">
+                      <a href="./index.html">
+                          <img src="" alt="logo" />
+                          <h1>The Nexus</h1>
+                      </a>
+                  </div>
+
+                  <!-- Contact details -->
+                  <div class="contact-details">
+                      <ul>
+                          <li>Email: queries@thenexus.com</li>
+                          <li>Cell no: +3451 0451 239</li>
+                      </ul>
+                  </div>
+
+                  <!-- Address map -->
+                  <div class="contact-address">
+                      <div class="address map">
+                          <!-- insert google maps address map -->
+                      </div>
+                      <p>Address: 123 Backer Str, California, 0231</p>
+                  </div>
+
+                  <!-- Social media links -->
+                  <div class="social-media-bar">
+                      <!-- Will insert social media logos later -->
+                      <a href="#">
+                          <img src="" alt="logo">
+                      </a>
+
+                      <a href="#">
+                          <img src="" alt="logo">
+                      </a>
+
+                      <a href="#">
+                          <img src="" alt="logo">
+                      </a>
+                  </div>
+
+              </aside>
+              <!-- Main contact form -->
+              <div class="contact-section">
+                  <h3>Contact Us</h3>
+                  <p>We'd love to hear from you!</p>
+
+                  <!-- Will add contact form here -->
+                  <div class="contact-form">
+                      <form action="" method="post">
+                          <ul>
+                              <li>
+                                  <label for="first_name">First Name</label>
+                                  <input type="text" id="name" name="user_name">
+                              </li>
+                              <li>
+                                  <label for="last_name">Last Name</label>
+                                  <input type="text" id="" name="">
+                              </li>
+                              <li>
+                                  <label for="email">Email address</label>
+                                  <input type="email" id="" name>
+                              </li>
+                              <li>
+                                  <label for="msg">Message</label>
+                                  <textarea name="" id=""></textarea>
+                              </li>
+                              <li>
+                                  <input type="submit" value="Submit">
+                              </li>
+                          </ul>
+                      </form>
+                  </div>
+              </div>
+          </div>
       </section>
 
-    </main>
-    <footer>
-      <div class="footer-logo-container">
-        <img src="" alt="footer-logo" />
-      </div>
-      <div class="visit-section">
-        <h4>Visit Theme Park</h4>
-        <div>
-          <ul>
-            <li>Opening Times</li>
-            <li>Ticket Prices</li>
-            <li>Attractions</li>
-            <li>Tours</li>
-          </ul>
-        </div>
-        <div class="social-links-container">
-          <h4>Follow our Socials!</h4>
-          <div class="social-link social-img">
-            <a href="">
-              <svg></svg>
-              <!--An svg graphic for the social icon-->
-            </a>
+      <footer>
+          <div class="footer-logo-container">
+              <img src="" alt="footer-logo" />
           </div>
-          <div class="social-link social-img">
-            <a href="">
-              <svg></svg>
-              <!--An svg graphic for the social icon-->
-            </a>
+
+          <div class="visit-section">
+              <h4>Visit Theme Park</h4>
+              <div>
+                  <ul>
+                      <li>Opening Times</li>
+                      <li>Ticket Prices</li>
+                      <li>Attractions</li>
+                      <li>Tours</li>
+                  </ul>
+              </div>
           </div>
-          <div class="social-link social-img">
-            <a href="">
-              <svg></svg>
-              <!--An svg graphic for the social icon-->
-            </a>
+
+          <!-- Social media links -->
+          <div class="social-media-bar">
+              <!-- Will insert social media logos later -->
+              <a href="#">
+                  <img src="" alt="logo">
+              </a>
+
+              <a href="#">
+                  <img src="" alt="logo">
+              </a>
+
+              <a href="#">
+                  <img src="" alt="logo">
+              </a>
           </div>
-        </div>
-        <div class="app-container">
-          <h4>Download Our App</h4>
-          <div>
-            <div class="app-download-icon-container">
-              <img
-                src="https://dg2kj7uuq7g1w.cloudfront.net/-/media/images/tivoli%20responsiv/icons/apple_app_store.svg"
-                alt=""
-              />
-            </div>
-            <div class="app-download-icon-container">
-              <img
-                src="	https://dg2kj7uuq7g1w.cloudfront.net/-/media/images/tivoli%20responsiv/icons/google-play-badge.svg"
-                alt=""
-              />
-            </div>
+
+          <div class="app-container">
+              <h4>Download Our App</h4>
+              <div>
+                  <div class="app-download-icon-container">
+                      <img src="https://dg2kj7uuq7g1w.cloudfront.net/-/media/images/tivoli%20responsiv/icons/apple_app_store.svg"
+                          alt="" />
+                  </div>
+                  <div class="app-download-icon-container">
+                      <img src="	https://dg2kj7uuq7g1w.cloudfront.net/-/media/images/tivoli%20responsiv/icons/google-play-badge.svg"
+                          alt="" />
+                  </div>
+              </div>
           </div>
-        </div>
-      </div>
-    </footer>
-  </body>
+
+      </footer>
+  </div>
+</body>
+
 </html>
