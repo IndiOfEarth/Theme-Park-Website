@@ -1,4 +1,23 @@
 /* styles */
+body {
+    background-color: #f6f4f4;
+    margin: 0;
+}
+
+header {
+    background-color: #7d2ae8;
+    margin-top: 0;
+    margin-left: 240px;
+    max-height: 3em;
+    padding: 10px;
+}
+
+header p {
+    margin: 0;
+    text-align: center;
+    padding: 5px;
+}
+
 .side-nav {
     position: fixed;
     top: 0;
@@ -11,9 +30,11 @@
 }
 
 .main-content {
-    margin-left: 250px;
+    margin-left: 240px;
+    position: relative;
+    top: -20px;
     /* match the width of the sidebar */
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .hero-image {
@@ -41,4 +62,259 @@
 .card-img {
     width: 400px;
     height: 300px;
+}
+
+
+.section-title {
+    text-align: center;
+}
+
+
+/* Featured Section */
+.featured {
+    margin: 50px 0;
+}
+
+/* Map Section  */
+.map-container {
+    position: relative;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.map-options {
+    background-color: #d8d8d8;
+    width: 350px;
+    border-radius: 10px;
+    margin-right: 10em;
+}
+
+.interactive-map {
+    background-color: #d8d8d8;
+    width: 55em;
+    border-radius: 10px;
+}
+
+.interactive-map img {
+    width: 100%;
+    height: 450px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.map-key {
+    padding: 20px;
+}
+
+.map-key h3 {
+    margin-top: 0;
+}
+
+.map-key ul {
+    display: flex;
+    list-style-type: square;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.map-key ul li {
+    padding: 10px;
+}
+
+/* site-nav-cards section  */
+.site-nav-cards {
+    margin: 50px 0;
+}
+
+.card-box {
+    height: 450px;
+    width: 300px;
+    background: #fff;
+    flex-direction: column;
+    border-radius: 25px;
+}
+
+.card-box .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 190px;
+}
+
+.card-box .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.card-box .info {
+    padding: 20px;
+}
+
+.card-box .info h2 {
+    font-size: 24px;
+    font-weight: 600;
+    cursor: text;
+    margin-bottom: 5px;
+}
+
+.card-box .info p {
+    font-size: 16px;
+    cursor: text;
+}
+
+.card-box .info .btn {
+    margin-top: 10px;
+    position: absolute;
+    top: 22em;
+}
+
+.card-box .info .btn button {
+    background: #FDCA40;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card-box .info .btn button:hover {
+    background: #f8ce5d;
+
+}
+
+/* Contact Section  */
+.contact {
+    margin: 50px 0;
+    max-height: 30em;
+}
+
+.contact .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60em;
+    margin: auto;
+    background-color: #12130F;
+    border-radius: 5px;
+}
+
+.form-container ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.form-item {
+    
+}
+
+
+/* Slider JS CSS */
+.mySwiper {
+    max-width: 1500px;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.container {
+    margin: 0 40px;
+    overflow: hidden;
+    height: 500px;    
+}
+
+.swiper-slide {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.swiper-slide .box {
+    height: 380px;
+    width: 400px;
+    background: #fff;
+    flex-direction: column;
+    border-radius: 25px;
+}
+
+.box .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 190px;
+}
+
+.box .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.box .info {
+    padding: 10px;
+    text-align: center;
+}
+
+.box .info h2 {
+    font-size: 24px;
+    font-weight: 600;
+    cursor: text;
+    margin-bottom: 5px;
+}
+
+.box .info p {
+    font-size: 16px;
+    cursor: text;
+}
+
+.box .info .btn {
+    margin-top: 10px;
+}
+
+.box .info .btn button {
+    background: #007aff;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.box .info .btn button:hover {
+    background: #3194fe;
+
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.swiper-button-next::after {
+    right: -15px;
+}
+
+.swiper-button-prev::after {
+    left: -15px;
+}
+
+.swiper-pagination-bullet {
+    height: 10px;
+    width: 35px;
+    border-radius: 25px;
+    background: #7d2ae8;
 }
