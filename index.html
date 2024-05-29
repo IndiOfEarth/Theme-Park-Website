@@ -16,6 +16,9 @@
     <!-- Styles and JS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,8 +27,7 @@
         <!-- Name, Logo-->
         <div class="nav-logo">
             <a href="./index.html">
-                <img src="" alt="logo" />
-                <h1>The Nexus</h1>
+                <h1 class="nav-heading"><span>The</span>NEXUS</h1>
             </a>
         </div>
 
@@ -43,31 +45,34 @@
         <!--Bottom part of nav bar  -->
         <div class="nav-footer">
             <!-- Logo -->
-            <a href="./index.html">
-                <img src="" alt="logo">
-            </a>
-
+            <div>
+                <a href="./index.html">
+                    <img src="./images/Icons/attractions_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="logo">
+                </a>
+            </div>
             <!-- Social media links -->
             <div class="social-media-bar">
                 <!-- Will insert social media logos later -->
                 <a href="#">
-                    <img src="" alt="logo">
+                    <img class="nav-social-icon" src="./images/Icons/facebook-app-round-white-icon.svg" alt="logo">
                 </a>
-
+    
                 <a href="#">
-                    <img src="" alt="logo">
+                    <img class="nav-social-icon" src="./images/Icons/instagram-white-icon.svg" alt="logo">
                 </a>
-
+    
                 <a href="#">
-                    <img src="" alt="logo">
+                    <img class="nav-social-icon" src="./images/Icons/x-social-media-white-icon.svg" alt="logo">
                 </a>
             </div>
 
             <!-- Important links -->
-            <ul>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Terms and conditions</a></li>
-            </ul>
+            <div class="quick-links">
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                </ul>
+            </div>
         </div>
 
     </nav>
@@ -340,8 +345,8 @@
                 <!-- Name, Logo-->
                 <div class="nav-logo">
                     <a href="./index.html">
-                        <img src="" alt="logo" />
-                        <h1>The Nexus</h1>
+                        <!-- <img src="" alt="logo" /> -->
+                        <h1 class="contact-heading">The Nexus</h1>
                     </a>
                 </div>
 
@@ -354,26 +359,29 @@
                 </div>
 
                 <!-- Address map -->
+
                 <div class="contact-address">
-                    <div class="address map">
-                        <!-- insert google maps address map -->
-                    </div>
                     <p>Address: 123 Backer Str, California, 0231</p>
+                    <!-- for the google maps address map -->
+                    <figure>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29755.402693236523!2d-81.57271498090529!3d28.368826849163046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdisney%20world!5e0!3m2!1sen!2suk!4v1716992317175!5m2!1sen!2suk" 
+                        width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </figure>
                 </div>
 
                 <!-- Social media links -->
                 <div class="social-media-bar">
                     <!-- Will insert social media logos later -->
                     <a href="#">
-                        <img src="" alt="logo">
+                        <img class="contact-social-icon" src="./images/Icons/facebook-app-round-white-icon.svg" alt="logo">
                     </a>
 
                     <a href="#">
-                        <img src="" alt="logo">
+                        <img class="contact-social-icon" src="./images/Icons/instagram-white-icon.svg" alt="logo">
                     </a>
 
                     <a href="#">
-                        <img src="" alt="logo">
+                        <img class="contact-social-icon" src="./images/Icons/x-social-media-white-icon.svg" alt="logo">
                     </a>
                 </div>
             </aside>
@@ -386,7 +394,7 @@
                     <form action="" method="post">
                         <div class="form-container">
                             <ul>
-                                <li>
+                                <li class="half-width">
                                     <div class="form-item">
                                         <div class="form-label">
                                             <label for="first_name">First Name</label>
@@ -395,6 +403,8 @@
                                             <input type="text" id="name" name="user_name">
                                         </div>
                                     </div>
+                                </li>
+                                <li class="half-width">
                                     <div class="form-item">
                                         <div class="form-label">
                                             <label for="first_name">Last Name</label>
@@ -410,7 +420,7 @@
                                             <label for="email">Email Address</label>
                                         </div>
                                         <div class="form-input">
-                                            <input type="email" id="" name="">
+                                            <input type="email" id="email" name="">
                                         </div>
                                     </div>
                                 </li>
@@ -420,12 +430,12 @@
                                             <label for="msg">Message</label>
                                         </div>
                                         <div class="form-input">
-                                            <textarea name="" id=""></textarea>
+                                            <textarea name="" id="msg"></textarea>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <input type="submit" value="Submit">
+                                    <input type="submit" id="submit" value="Submit">
                                 </li>
                             </ul>
                         </div>
@@ -436,52 +446,65 @@
       </section>
 
       <footer>
-          <div class="footer-logo-container">
-              <img src="" alt="footer-logo" />
-          </div>
+        <div class="footer-row">
+            <!-- <div class="footer-logo-container">
+                <img src="" alt="footer-logo" />
+            </div> -->
+    
+            <div class="visit-section">
+                <h4>Visit</h4>
+                <div>
+                    <ul class="footer-list">
+                        <li>Opening Times</li>
+                        <li>Ticket Prices</li>
+                        <li>Attractions</li>
+                        <li>Tours</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <h4>Info</h4>
+                <div>
+                    <ul class="footer-list">
+                        <li>About Us</li>
+                        <li>Terms and Conditions</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+            </div>
 
-          <div class="visit-section">
-              <h4>Visit Theme Park</h4>
-              <div>
-                  <ul>
-                      <li>Opening Times</li>
-                      <li>Ticket Prices</li>
-                      <li>Attractions</li>
-                      <li>Tours</li>
-                  </ul>
-              </div>
-          </div>
+            <div class="app-container">
+                <h4>Download Our App</h4>
+                <div>
+                    <div class="app-download-icon-container">
+                        <img src="https://dg2kj7uuq7g1w.cloudfront.net/-/media/images/tivoli%20responsiv/icons/apple_app_store.svg"
+                            alt="" />
+                    </div>
+                    <div class="app-download-icon-container">
+                        <img src="	https://dg2kj7uuq7g1w.cloudfront.net/-/media/images/tivoli%20responsiv/icons/google-play-badge.svg"
+                            alt="" />
+                    </div>
+                </div>
 
-          <!-- Social media links -->
-          <div class="social-media-bar">
-              <!-- Will insert social media logos later -->
-              <a href="#">
-                  <img src="" alt="logo">
-              </a>
-
-              <a href="#">
-                  <img src="" alt="logo">
-              </a>
-
-              <a href="#">
-                  <img src="" alt="logo">
-              </a>
-          </div>
-
-          <div class="app-container">
-              <h4>Download Our App</h4>
-              <div>
-                  <div class="app-download-icon-container">
-                      <img src="https://dg2kj7uuq7g1w.cloudfront.net/-/media/images/tivoli%20responsiv/icons/apple_app_store.svg"
-                          alt="" />
-                  </div>
-                  <div class="app-download-icon-container">
-                      <img src="	https://dg2kj7uuq7g1w.cloudfront.net/-/media/images/tivoli%20responsiv/icons/google-play-badge.svg"
-                          alt="" />
-                  </div>
-              </div>
-          </div>
-
+                <!-- Social media links -->
+                <div class="social-media-bar">
+                    <!-- Will insert social media logos later -->
+                    <a href="#">
+                        <img class="contact-social-icon" src="./images/Icons/facebook-app-round-white-icon.svg" alt="logo">
+                    </a>
+        
+                    <a href="#">
+                        <img class="contact-social-icon" src="./images/Icons/instagram-white-icon.svg" alt="logo">
+                    </a>
+        
+                    <a href="#">
+                        <img class="contact-social-icon" src="./images/Icons/x-social-media-white-icon.svg" alt="logo">
+                    </a>
+                </div>
+            </div>
+    
+        </div>
       </footer>
   </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

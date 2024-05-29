@@ -2,10 +2,13 @@
 body {
     background-color: #f6f4f4;
     margin: 0;
+    font-family: "Syne", sans-serif;
+    font-style: normal;
 }
 
 header {
     background-color: #7d2ae8;
+    color: #fff;
     margin-top: 0;
     margin-left: 240px;
     max-height: 3em;
@@ -24,18 +27,87 @@ header p {
     left: 0;
     width: 200px;
     height: 100vh;
-    background-color: #f0f0f0;
+    background: #12130F;
+    color: #fff;
     padding: 20px;
     z-index: 1;
+}
+
+.nav-logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-logo a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+    margin-top: 0.5em;
+}
+
+.nav-heading span {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: -10px;
+}
+
+.quick-links ul li {
+    text-decoration: none;
+    list-style-type: none;
+}   
+
+.quick-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+}   
+
+.quick-links ul li a:visited {
+    text-decoration: none;
+    color: #fff;
+}   
+
+.nav-social-icon {
+    width: 35px;
+    height: 35px;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 5em 0;
+    gap: 0.5em;
+}
+
+.nav-footer .quick-links ul {
+    padding: 0;
+    text-align: center;
+}
+.nav-footer .quick-links ul li a {
+    font-size: 0.75rem;
+}
+
+
+.social-media-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .main-content {
     margin-left: 240px;
     position: relative;
     top: -20px;
-    /* match the width of the sidebar */
-    /* padding: 20px; */
 }
+
 
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/Designer.jpeg");
@@ -54,6 +126,18 @@ header p {
     padding: 0 1rem;
 }
 
+.hero-button {
+    width: 150px;
+    height: 50px;
+    font-family: "Syne", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    background-color: #FDCA40;
+    border-style: none;
+    border-radius: 5px;
+}
+
 .app-download-icon-container {
     height: 36px;
     width: 120px;
@@ -69,13 +153,20 @@ header p {
     text-align: center;
 }
 
+.section-title h2 {
+    font-size: 3rem;
+}
 
 /* Featured Section */
 .featured {
-    margin: 50px 0;
+    margin: 5em 0;
 }
 
 /* Map Section  */
+.park-map {
+    margin: 5em 0;
+}
+
 .map-container {
     position: relative;
     height: 600px;
@@ -126,7 +217,7 @@ header p {
 
 /* site-nav-cards section  */
 .site-nav-cards {
-    margin: 50px 0;
+    margin: 10em 0;
 }
 
 .card-box {
@@ -193,7 +284,7 @@ header p {
 /* Contact Section  */
 .contact {
     margin: 50px 0;
-    max-height: 30em;
+    max-height: 35em;
 }
 
 .contact .container {
@@ -201,19 +292,113 @@ header p {
     grid-template-columns: 1fr 1fr;
     width: 60em;
     margin: auto;
-    background-color: #12130F;
+    background-color: #d8d8d8;
     border-radius: 5px;
+    height: 35em;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-heading {
+    font-size: 3em;
+}
+
+.contact-details ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-social-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-section {
+    margin: auto;
 }
 
 .form-container ul{
     list-style-type: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.form-item {
-    
+.form-container ul li {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
+.form-container ul li.half-width {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.form-label {
+    margin: 0.5em 0;
+}
+
+#name {
+    width: 80%;
+    height: 2em;
+    border-radius: 5px;
+}
+
+#email {
+    width: 90%;
+    height: 2em;
+    border-radius: 5px;
+}
+
+#msg {
+    width: 90%;
+    height: 5em;
+    border-radius: 5px;
+}
+
+#submit {
+    width: 90%;
+    height: 3em;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Footer Section  */
+footer {
+    position: absolute;
+    background: #12130F;
+    width: 100%;
+    height: 20em;
+    color: #fff;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 80%;
+    padding: 3em;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.app-container .social-media-bar {
+    gap: 1em;
+}
 
 /* Slider JS CSS */
 .mySwiper {
