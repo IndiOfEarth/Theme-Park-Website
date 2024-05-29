@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Homepage for the theme park website!" />
+    <meta name="description" content="About The Nexus!" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Author name" />
 
@@ -14,6 +14,9 @@
     <title>About The Nexus | A Space-Themed Amusement Park</title>
 
     <!-- Styles and JS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <script src="index.js"></script>
 </head>
@@ -24,8 +27,7 @@
         <!-- Name, Logo-->
         <div class="nav-logo">
             <a href="./index.html">
-                <img src="" alt="logo" />
-                <h1>The Nexus</h1>
+                <h1 class="nav-heading"><span>The</span>NEXUS</h1>
             </a>
         </div>
 
@@ -43,49 +45,52 @@
         <!--Bottom part of nav bar  -->
         <div class="nav-footer">
             <!-- Logo -->
-            <a href="./index.html">
-                <img src="" alt="logo">
-            </a>
-
+            <div>
+                <a href="./index.html">
+                    <img src="./images/Icons/attractions_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="logo">
+                </a>
+            </div>
             <!-- Social media links -->
             <div class="social-media-bar">
                 <!-- Will insert social media logos later -->
                 <a href="#">
-                    <img src="" alt="logo">
+                    <img class="nav-social-icon" src="./images/Icons/facebook-app-round-white-icon.svg" alt="logo">
                 </a>
 
                 <a href="#">
-                    <img src="" alt="logo">
+                    <img class="nav-social-icon" src="./images/Icons/instagram-white-icon.svg" alt="logo">
                 </a>
 
                 <a href="#">
-                    <img src="" alt="logo">
+                    <img class="nav-social-icon" src="./images/Icons/x-social-media-white-icon.svg" alt="logo">
                 </a>
             </div>
 
             <!-- Important links -->
-            <ul>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Terms and conditions</a></li>
-            </ul>
+            <div class="quick-links">
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                </ul>
+            </div>
         </div>
 
     </nav>
 
+    <!-- Announcements header -->
+    <header>
+        <p>Place any header announcements here</p>
+    </header>
     <div class="main-content">
-        <!-- Announcements header -->
-        <header>
-            <p>Place any header announcements here</p>
-        </header>
-
         <!-- Hero Section -->
         <section class="hero">
-            <img src="" alt="image">
-            <div class="hero-card">
-                <h1>Experience an Odyssey through the Cosmos</h1>
-                <p>This is the body tect for the hero card. In here we will describe the main call to action of this
-                    page</p>
-                <button type="button" class="hero-button">Book Tickets!</button>
+            <div class="hero-image-about">
+                <div class="hero-text">
+                    <h1>About The Nexus!</h1>
+                    <p>This is the body text for the hero card. In here we will describe the main call to action of this
+                        page</p>
+                    <button type="button" class="hero-button">See Rides!</button>
+                </div>
             </div>
         </section>
 
@@ -400,54 +405,68 @@
             </div>
         </section>
 
-        <!-- Main footer -->
         <footer>
-            <div class="footer-logo-container">
-                <img src="" alt="footer-logo" />
-            </div>
+            <div class="footer-row">
+                <!-- <div class="footer-logo-container">
+                    <img src="" alt="footer-logo" />
+                </div> -->
 
-            <div class="visit-section">
-                <h4>Visit Theme Park</h4>
-                <div>
-                    <ul>
-                        <li>Opening Times</li>
-                        <li>Ticket Prices</li>
-                        <li>Attractions</li>
-                        <li>Tours</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Social media links -->
-            <div class="social-media-bar">
-                <!-- Will insert social media logos later -->
-                <a href="#">
-                    <img src="" alt="logo">
-                </a>
-
-                <a href="#">
-                    <img src="" alt="logo">
-                </a>
-
-                <a href="#">
-                    <img src="" alt="logo">
-                </a>
-            </div>
-
-            <div class="app-container">
-                <h4>Download Our App</h4>
-                <div>
-                    <div class="app-download-icon-container">
-                        <img src="https://dg2kj7uuq7g1w.cloudfront.net/-/media/images/tivoli%20responsiv/icons/apple_app_store.svg"
-                            alt="" />
-                    </div>
-                    <div class="app-download-icon-container">
-                        <img src="	https://dg2kj7uuq7g1w.cloudfront.net/-/media/images/tivoli%20responsiv/icons/google-play-badge.svg"
-                            alt="" />
+                <div class="visit-section">
+                    <h4>Visit</h4>
+                    <div>
+                        <ul class="footer-list">
+                            <li>Opening Times</li>
+                            <li>Ticket Prices</li>
+                            <li>Attractions</li>
+                            <li>Tours</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
 
+                <div class="info-section">
+                    <h4>Info</h4>
+                    <div>
+                        <ul class="footer-list">
+                            <li>About Us</li>
+                            <li>Terms and Conditions</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="app-container">
+                    <h4>Download Our App</h4>
+                    <div>
+                        <div class="app-download-icon-container">
+                            <img src="https://dg2kj7uuq7g1w.cloudfront.net/-/media/images/tivoli%20responsiv/icons/apple_app_store.svg"
+                                alt="" />
+                        </div>
+                        <div class="app-download-icon-container">
+                            <img src="	https://dg2kj7uuq7g1w.cloudfront.net/-/media/images/tivoli%20responsiv/icons/google-play-badge.svg"
+                                alt="" />
+                        </div>
+                    </div>
+
+                    <!-- Social media links -->
+                    <div class="social-media-bar">
+                        <!-- Will insert social media logos later -->
+                        <a href="#">
+                            <img class="contact-social-icon" src="./images/Icons/facebook-app-round-white-icon.svg"
+                                alt="logo">
+                        </a>
+
+                        <a href="#">
+                            <img class="contact-social-icon" src="./images/Icons/instagram-white-icon.svg" alt="logo">
+                        </a>
+
+                        <a href="#">
+                            <img class="contact-social-icon" src="./images/Icons/x-social-media-white-icon.svg"
+                                alt="logo">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
         </footer>
 
     </div>
