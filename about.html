@@ -17,8 +17,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="index.js"></script>
 </head>
 
 <body>
@@ -94,143 +94,228 @@
             </div>
         </section>
 
-        <!-- Park History -->
-        <section class="about-park">
+        <!-- About Park Section -->
+        <section id="about-park">
             <!-- Title -->
             <div class="section-title">
-                <h2>We've come a long way, and were just getting started.</h2>
+                <h2>We've come a long way, and we're just getting started.</h2>
             </div>
 
+            <nav class="tab-nav">
+                <button class="tablink" onclick="showInfo('origins', this)">ORIGINS</button>
+                <button class="tablink" onclick="showInfo('vision', this)" id="defaultOpen">OUR VISION</button>
+                <button class="tablink" onclick="showInfo('mission', this)">OUR MISSION</button>
+                <button class="tablink" onclick="showInfo('awards', this)">AWARDS</button>
+            </nav>
             <!-- Article Section -->
             <div class="articles">
                 <!-- Article Nav -->
-                <nav class="tab-nav">
-                    <ul>
-                        <li>Origins</li>
-                        <li>Our Vision</li>
-                        <li>Our Mission</li>
-                        <li>Awards</li>
-                    </ul>
-                </nav>
 
-                <!-- Carousel -->
-                <div class="cards-carousel">
-                    <div class="carousel-inner">
-                        <!-- Card item -->
-                        <div class="carousel-item">
-                            <div class="card-article">
-                                <div class="card-img">
-                                    <img src="" alt="img">
-                                </div>
-                                <div class="card-content">
-                                    <h3 class="card-heading">Story Heading</h3>
-                                    <p class="card-text">This is a card containing the information related to this
-                                        section of the park about us page.
-                                    </p>
-                                </div>
-                            </div>
+                <div id="origins" class="content">
+                    <h2>Origins</h2>
+                    <hr>
+                    <div class="content-container">
+                        <div class="content-image">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1" id="_x32_" width="200px" height="200px" viewBox="0 0 512 512"
+                                xml:space="preserve">
+                                <style type="text/css">
+                                    <![CDATA[
+                                    .st0 {
+                                        fill: #fff;
+                                    }
+                                    ]]>
+                                </style>
+                                <g>
+                                    <polygon class="st0"
+                                        points="231.266,471.531 220.953,512 293.141,512 282.828,471.531  " />
+                                    <polygon class="st0"
+                                        points="91.016,471.531 80.703,512 133.156,512 122.844,471.531  " />
+                                    <polygon class="st0"
+                                        points="389.156,471.531 378.844,512 431.297,512 420.984,471.531  " />
+                                    <path class="st0"
+                                        d="M405.078,106.438c-13.156,0-31.75,22.156-31.75,37.281v188.766c-9.25-6.859-18.438-14.266-26.547-22.922   V114.734C346.781,68.188,294.203,0,257.047,0c-37.172,0-89.75,68.188-89.75,114.734v194.828   c-8.719,9.313-18.688,17.172-28.625,24.469V143.719c0-15.125-18.609-37.281-31.734-37.281c-13.156,0-31.75,22.156-31.75,37.281   v311.984h63.484v-22.344h28.625v29.531h179.484v-29.531h26.547v22.344h63.484V143.719   C436.813,128.594,418.203,106.438,405.078,106.438z M387.344,414.188H126.75c-13.125,0-14.328-37.75,13.984-58.031   c33.391-23.891,73.375-53.484,73.375-117.203c0-29.594,0-44.391,0-71.703c0-22.625,19.219-55.75,42.938-55.75   c23.703,0,42.922,33.125,42.922,55.75c0,27.313,0,42.109,0,71.703c0,63.719,39.984,93.313,73.375,117.203   C401.656,376.438,400.453,414.188,387.344,414.188z" />
+                                    <path class="st0"
+                                        d="M282.078,203.719c0,8.703-50.078,8.703-50.078,0c0-8.688,11.219-15.719,25.047-15.719   S282.078,195.031,282.078,203.719z" />
+                                    <path class="st0"
+                                        d="M209.906,374.25c0,10.594-8.578,19.156-19.172,19.156c-10.578,0-19.156-8.563-19.156-19.156   s8.578-19.156,19.156-19.156C201.328,355.094,209.906,363.656,209.906,374.25z" />
+                                </g>
+                            </svg>
                         </div>
-
-                        <!-- Card item -->
-                        <div class="carousel-item">
-                            <div class="card-article">
-                                <div class="card-img">
-                                    <img src="" alt="img">
-                                </div>
-                                <div class="card-content">
-                                    <h3 class="card-heading">Story Heading</h3>
-                                    <p class="card-text">This is a card containing the information related to this
-                                        section of the park about us page.
-                                    </p>
-                                </div>
-                            </div>
+                        <div class="content-text">
+                            <p>Inspired by the incredible achievements of space exploration and the boundless mysteries
+                                of
+                                the cosmos, our founders embarked on a mission to create a unique amusement park that
+                                would
+                                celebrate the thrill and adventure of space travel. Drawing from their backgrounds in
+                                aerospace, technology, and entertainment, they set out to design a park that would be
+                                both
+                                educational and exhilarating.</p>
                         </div>
-
-                        <!-- Card item -->
-                        <div class="carousel-item">
-                            <div class="card-article">
-                                <div class="card-img">
-                                    <img src="" alt="img">
-                                </div>
-                                <div class="card-content">
-                                    <h3 class="card-heading">Story Heading</h3>
-                                    <p class="card-text">This is a card containing the information related to this
-                                        section of the park about us page.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
+                <div id="vision" class="content">
+                    <h2>Vision</h2>
+                    <hr>
+                    <div class="content-container">
+                        <div class="content-image">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="200px" height="200px"
+                                viewBox="0 0 512 512">
+                                <style type="text/css">
+                                    .st0 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                                <path class="st0"
+                                    d="M96.85,286.62a8,8,0,0,0-12.53,8.25C102.07,373.28,172.3,432,256,432a175.31,175.31,0,0,0,52.41-8,8,8,0,0,0,.79-15,1120,1120,0,0,1-109.48-55.61A1126.24,1126.24,0,0,1,96.85,286.62Z" />
+                                <path class="st0"
+                                    d="M492.72,339.51c-4.19-5.58-9.11-11.44-14.7-17.53a15.83,15.83,0,0,0-26.56,5.13c0,.16-.11.31-.17.47a15.75,15.75,0,0,0,3.15,16.06c22.74,25,26.42,38.51,25.48,41.36-2,2.23-17.05,6.89-58.15-3.53q-8.83-2.24-19.32-5.46-6.76-2.08-13.79-4.49h0a176.76,176.76,0,0,0,19.54-27.25c.17-.29.35-.58.52-.88A175.39,175.39,0,0,0,432,256,178.87,178.87,0,0,0,431,237C421.43,148.83,346.6,80,256,80A175.37,175.37,0,0,0,149.6,115.89a177.4,177.4,0,0,0-45.83,51.84c-.16.29-.34.58-.51.87a175.48,175.48,0,0,0-13.83,30.52q-5.59-4.87-10.79-9.67c-5.39-5-10.17-9.63-14.42-14C34.65,145.19,31.13,129.84,32.06,127c2-2.23,15.54-5.87,48.62,1.31A15.82,15.82,0,0,0,96.22,123l.36-.44a15.74,15.74,0,0,0-8.67-25.43A237.38,237.38,0,0,0,64.13,93C33.41,89.47,13.3,95.52,4.35,111,1.11,116.58-2,126.09,1.63,139.6,7,159.66,26.14,184,53.23,209.5c8.63,8.13,18.06,16.37,28.12,24.64,7.32,6,15,12.06,22.9,18.08q7.91,6,16.15,12T137.1,276c25.41,17.61,52.26,34.52,78.59,49.69q14.34,8.26,28.64,16t28.37,14.81c21.9,11,43.35,20.92,63.86,29.43q13.19,5.48,25.81,10.16c11.89,4.42,23.37,8.31,34.31,11.59l1.1.33c25.73,7.66,47.42,11.69,64.48,12H464c21.64,0,36.3-6.38,43.58-19C516.67,385.39,511.66,364.69,492.72,339.51Z" />
+                            </svg>
+                        </div>
+                        <div class="content-text">
+                            <p>At THE NEXUS, we strive to blend cutting-edge technology with creative storytelling to
+                                transport
+                                you beyond the stars. Our park features state-of-the-art attractions, interactive
+                                exhibits,
+                                and
+                                educational programs that celebrate the marvels of the cosmos. From the thrill of
+                                piloting
+                                your
+                                own spacecraft to the serene beauty of a simulated moonwalk, every corner of our park is
+                                designed to inspire and educate.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="mission" class="content">
+                    <h2>Mission</h2>
+                    <hr>
+                    <div class="content-container">
+                        <div class="content-image">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                fill="#000000" height="200px" width="200px" version="1.1" id="Icons" viewBox="0 0 32 32"
+                                xml:space="preserve">
+                                <style type="text/css">
+                                    .st0 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                                <path class="st0"
+                                    d="M30.9,5.6C30.8,5.2,30.4,5,30,5h-3V2c0-0.4-0.2-0.8-0.6-0.9C26,0.9,25.6,1,25.3,1.3l-4,4C21.1,5.5,21,5.7,21,6v3.6l-5.7,5.7  c-0.4,0.4-0.4,1,0,1.4c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l5.7-5.7H26c0.3,0,0.5-0.1,0.7-0.3l4-4C31,6.4,31.1,6,30.9,5.6z" />
+                                <path class="st0"
+                                    d="M18.1,18.1C17.6,18.7,16.8,19,16,19s-1.6-0.3-2.1-0.9c-1.2-1.2-1.2-3.1,0-4.2l2.8-2.8C16.5,11,16.2,11,16,11  c-2.8,0-5,2.2-5,5s2.2,5,5,5s5-2.2,5-5c0-0.2,0-0.5-0.1-0.7L18.1,18.1z" />
+                                <path class="st0"
+                                    d="M28.1,12.1C27.6,12.7,26.8,13,26,13h-2.8l-0.7,0.7c0.3,0.7,0.4,1.5,0.4,2.3c0,3.9-3.1,7-7,7s-7-3.1-7-7s3.1-7,7-7  c0.8,0,1.6,0.2,2.3,0.4L19,8.8V6c0-0.8,0.3-1.6,0.9-2.1l1-1C19.3,2.3,17.7,2,16,2C8.3,2,2,8.3,2,16s6.3,14,14,14s14-6.3,14-14  c0-1.7-0.3-3.3-0.9-4.9L28.1,12.1z" />
+                            </svg>
+                        </div>
+                        <div class="content-text">
+                            <p>Our mission is to foster a sense of wonder and adventure, encouraging guests of all ages
+                                to
+                                dream big and explore the unknown. We are committed to promoting STEM (Science,
+                                Technology,
+                                Engineering, and Mathematics) education through engaging and entertaining experiences,
+                                sparking
+                                a lifelong passion for learning and discovery.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="awards" class="content">
+                    <h2>Awards</h2>
+                    <hr>
+                    <div class="content-container">
+                        <div class="content-image">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="200px" height=2800px" viewBox="0 0 20 20">
+                                <style type="text/css">
+                                    .st0 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                                <rect x="0" fill="none" width="20" height="20" />
 
+                                <g>
+
+                                    <path class="st0"
+                                        d="M4.46 5.16L5 7.46l-.54 2.29 2.01 1.24L7.7 13l2.3-.54 2.3.54 1.23-2.01 2.01-1.24L15 7.46l.54-2.3-2-1.24-1.24-2.01-2.3.55-2.29-.54-1.25 2zm5.55 6.34C7.79 11.5 6 9.71 6 7.49c0-2.2 1.79-3.99 4.01-3.99 2.2 0 3.99 1.79 3.99 3.99 0 2.22-1.79 4.01-3.99 4.01zm-.02-1C8.33 10.5 7 9.16 7 7.5c0-1.65 1.33-3 2.99-3S13 5.85 13 7.5c0 1.66-1.35 3-3.01 3zm3.84 1.1l-1.28 2.24-2.08-.47L13 19.2l1.4-2.2h2.5zm-7.7.07l1.25 2.25 2.13-.51L7 19.2 5.6 17H3.1z" />
+
+                                </g>
+
+                            </svg>
+                        </div>
+                        <div class="content-text">
+                            <p>Outstanding Achievement in Theme Park Design: THE NEXUS received this coveted award
+                                for our groundbreaking use of immersive technology and storytelling that sets new
+                                standards
+                                in the industry.</p>
+                            <p>Innovation in Technology: The Nexus was celebrated for our pioneering use of
+                                augmented reality (AR) and virtual reality (VR) to enhance guest experiences, making
+                                space
+                                exploration more accessible and thrilling than ever before.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Community Projects -->
-        <section class="featured">
-            <!-- Title -->
+
+
+        <!-- Outreach Section -->
+        <section class="outreach">
             <div class="section-title">
-                <h2>Our outreach programs</h2>
+                <h2>Our Outreach Program</h2>
+                <p>See some of the community outreach projects and endeavours run by the park.</p>
             </div>
-
             <!-- Cards section -->
-            <div class="cards-carousel">
-                <div class="carousel-inner">
-                    <!-- Card item -->
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="" alt="img">
+            <div class="container">
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="card-box">
+                            <div class="img">
+                                <img src="./images/giuvicente-unsplash.jpg" alt="">
                             </div>
-                            <div class="card-content">
-                                <h3 class="card-heading">Program 1</h3>
-                                <p class="card-text">This is a card that details one of the community outreach projects
-                                    run by the park.
-                                </p>
-                                <button type="button" class="card-button">Learn more</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card item -->
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="" alt="img">
-                            </div>
-                            <div class="card-content">
-                                <h3 class="card-heading">Program 1</h3>
-                                <p class="card-text">This is a card that details one of the community outreach projects
-                                    run by the park.
-                                </p>
-                                <button type="button" class="card-button">Learn more</button>
+                            <div class="info">
+                                <h2>Program 1</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur eligendi nulla
+                                    impedit ea tenetur ipsum!</p>
+                                <div class="btn">
+                                    <button>Explore!</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Card item -->
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="" alt="img">
+                    <div class="card">
+                        <div class="card-box">
+                            <div class="img">
+                                <img src="./images/viniciusbrasil-unsplash.jpg" alt="">
                             </div>
-                            <div class="card-content">
-                                <h3 class="card-heading">Program 1</h3>
-                                <p class="card-text">This is a card that details one of the community outreach projects
-                                    run by the park.
-                                </p>
-                                <button type="button" class="card-button">Learn more</button>
+                            <div class="info">
+                                <h2>Program 2</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quod dolores.
+                                    Autem iure harum tenetur.</p>
+                                <div class="btn">
+                                    <button>Explore!</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Carousel Nav -->
-                    <div class="carousel-control-prev" href="#prev"></div>
-                    <div class="carousel-control-next" href="#next"></div>
+                    <div class="card">
+                        <div class="card-box">
+                            <div class="img">
+                                <img src="./images/MetaAI.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h2>Program 3</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, totam accusantium
+                                    assumenda officia porro amet.</p>
+                                <div class="btn">
+                                    <button>Explore!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+
 
         <!-- Frequently Asked Questions -->
         <section class="faq">
@@ -315,25 +400,22 @@
 
             <!-- Important downloads -->
             <div class="downloads">
-                <ul>
-                    <li><a href="">Park rules</a></li>
-                    <li><a href="">Terms and conditions</a></li>
-                    <li><a href="">Park Map download</a></li>
-                </ul>
+                <a href="">Park rules</a>
+                <a href="">Terms and conditions</a>
+                <a href="">Park Map download</a>
             </div>
 
         </section>
 
         <!-- Contact Section -->
         <section class="contact">
-            <div class="contact-card">
-                <!-- Contact info and social links -->
+            <div class="container">
                 <aside class="contact-info">
                     <!-- Name, Logo-->
                     <div class="nav-logo">
                         <a href="./index.html">
-                            <img src="" alt="logo" />
-                            <h1>The Nexus</h1>
+                            <!-- <img src="" alt="logo" /> -->
+                            <h1 class="contact-heading">The Nexus</h1>
                         </a>
                     </div>
 
@@ -346,59 +428,90 @@
                     </div>
 
                     <!-- Address map -->
+
                     <div class="contact-address">
-                        <div class="address map">
-                            <!-- insert google maps address map -->
-                        </div>
                         <p>Address: 123 Backer Str, California, 0231</p>
+                        <!-- for the google maps address map -->
+                        <figure>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29755.402693236523!2d-81.57271498090529!3d28.368826849163046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdisney%20world!5e0!3m2!1sen!2suk!4v1716992317175!5m2!1sen!2suk"
+                                width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </figure>
                     </div>
 
                     <!-- Social media links -->
                     <div class="social-media-bar">
                         <!-- Will insert social media logos later -->
                         <a href="#">
-                            <img src="" alt="logo">
+                            <img class="contact-social-icon" src="./images/Icons/facebook-app-round-white-icon.svg"
+                                alt="logo">
                         </a>
 
                         <a href="#">
-                            <img src="" alt="logo">
+                            <img class="contact-social-icon" src="./images/Icons/instagram-white-icon.svg" alt="logo">
                         </a>
 
                         <a href="#">
-                            <img src="" alt="logo">
+                            <img class="contact-social-icon" src="./images/Icons/x-social-media-white-icon.svg"
+                                alt="logo">
                         </a>
                     </div>
-
                 </aside>
-                <!-- Main contact form -->
                 <div class="contact-section">
-                    <h3>Contact Us</h3>
-                    <p>We'd love to hear from you!</p>
-
-                    <!-- Will add contact form here -->
+                    <div class="contact-text">
+                        <h3>We'd Like to Hear From You!</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, perspiciatis.</p>
+                    </div>
                     <div class="contact-form">
                         <form action="" method="post">
-                            <ul>
-                                <li>
-                                    <label for="first_name">First Name</label>
-                                    <input type="text" id="name" name="user_name">
-                                </li>
-                                <li>
-                                    <label for="last_name">Last Name</label>
-                                    <input type="text" id="" name="">
-                                </li>
-                                <li>
-                                    <label for="email">Email address</label>
-                                    <input type="email" id="" name>
-                                </li>
-                                <li>
-                                    <label for="msg">Message</label>
-                                    <textarea name="" id=""></textarea>
-                                </li>
-                                <li>
-                                    <input type="submit" value="Submit">
-                                </li>
-                            </ul>
+                            <div class="form-container">
+                                <ul>
+                                    <li class="half-width">
+                                        <div class="form-item">
+                                            <div class="form-label">
+                                                <label for="first_name">First Name</label>
+                                            </div>
+                                            <div class="form-input">
+                                                <input type="text" id="name" name="user_name">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="half-width">
+                                        <div class="form-item">
+                                            <div class="form-label">
+                                                <label for="first_name">Last Name</label>
+                                            </div>
+                                            <div class="form-input">
+                                                <input type="text" id="name" name="user_name">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-item">
+                                            <div class="form-label">
+                                                <label for="email">Email Address</label>
+                                            </div>
+                                            <div class="form-input">
+                                                <input type="email" id="email" name="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-item">
+                                            <div class="form-label">
+                                                <label for="msg">Message</label>
+                                            </div>
+                                            <div class="form-input">
+                                                <textarea name="" id="msg"></textarea>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="submit" id="submit" value="Submit">
+                                    </li>
+                                </ul>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -470,6 +583,8 @@
         </footer>
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
