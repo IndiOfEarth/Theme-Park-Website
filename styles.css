@@ -21,16 +21,27 @@ header p {
     padding: 5px;
 }
 
+
 .side-nav {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 200px;
-    height: 100vh;
+    justify-content: left;
     background: #12130F;
     color: #fff;
+    width: 200px;
+    height: 100vh;
     padding: 20px;
-    z-index: 1;
+}
+
+.top-nav-content {
+    grid-row: 1;
+    padding: 0% 1%;
+}
+
+.middle-content {
+    grid-row: 2;
 }
 
 .nav-logo a {
@@ -85,6 +96,7 @@ header p {
     text-align: center;
     margin: 5em 0;
     gap: 0.5em;
+    grid-row: 3;
 }
 
 .nav-footer .quick-links ul {
@@ -96,7 +108,6 @@ header p {
     font-size: 0.75rem;
 }
 
-
 .social-media-bar {
     display: flex;
     flex-direction: row;
@@ -105,10 +116,10 @@ header p {
 
 .main-content {
     margin-left: 240px;
+    justify-content: right;
     position: relative;
     top: -20px;
 }
-
 
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/Designer.jpeg");
@@ -127,7 +138,6 @@ header p {
     background-size: cover;
     position: relative;
 }
-
 
 .hero-text {
     position: relative;
@@ -163,7 +173,6 @@ header p {
     height: 300px;
 }
 
-
 .section-title {
     text-align: center;
 }
@@ -173,15 +182,18 @@ header p {
     margin: 30px 0;
 }
 
+
 /* Featured Section */
 .featured {
     margin: 5em 0;
+    padding: 2% 5%;
 }
+
 
 /* Map Section  */
 .park-map {
     margin: 5em 0;
-    padding: 3em 0;
+    padding: 2% 5%;
     background-color: #12130F;
     color: #fff;
 }
@@ -236,9 +248,11 @@ header p {
     padding: 10px;
 }
 
+
 /* site-nav-cards section  */
 .site-nav-cards {
     margin: 10em 0;
+    padding: 2% 5%;
 }
 
 .card-wrapper {
@@ -314,6 +328,7 @@ header p {
     background: #f8ce5d;
 
 }
+
 
 /* Contact Section  */
 .contact {
@@ -401,6 +416,8 @@ header p {
     color: #fff;
 }
 
+
+
 /* Footer Section  */
 footer {
     position: absolute;
@@ -443,8 +460,8 @@ footer {
     padding: 40px 0;
 }
 
-.container {
-    margin: 5em 40px;
+.swiper-container {
+    margin: 5em 4%;
     overflow: hidden;
     height: 500px;
 }
@@ -532,7 +549,6 @@ footer {
     padding: 10px;
 }
 
-
 .swiper-button-next::after {
     right: -15px;
 }
@@ -547,6 +563,8 @@ footer {
     border-radius: 25px;
     background: #7d2ae8;
 }
+
+
 
 /* About - about-park */
 #about-park {
@@ -564,6 +582,7 @@ footer {
     margin: 13em auto;
     color: white;
 }
+
 
 /* These are the buttons */
 /* Reference - https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
@@ -604,7 +623,6 @@ footer {
     background-color: #7d2ae8;
 }
 
-
 .content {
     display: none;
     /* padding: 100px 20px; */
@@ -622,7 +640,6 @@ footer {
     height: 25em;
 }
 
-
 .content-text {
     width: 40em;
 }
@@ -630,6 +647,18 @@ footer {
 .content p {
     font-size: 1.2em;
 }
+
+.secondary-btn {
+    background: #007aff;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 
 /* #origins {
     background-color: #f8ce5d;
@@ -647,10 +676,14 @@ footer {
     background-color: #f8ce5d;
 } */
 
+
+
 /* outreach section  */
 .outreach {
     margin: 10em 0;
 }
+
+
 
 /* faq section  */
 .faq {
@@ -664,4 +697,102 @@ footer {
 .downloads {
     margin: 3em auto;
     text-align: center;
+}
+
+
+
+/* plan section */
+.planner {
+    margin: 5em 0;
+    padding: 2% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.planning-info {
+    max-width: 50%;
+}
+
+.section-body {
+    padding: 2% 5%;
+}
+
+.plan-info-card {
+    color: #12130F;
+    max-height: 200px;
+    min-width: 300px;
+    max-width: 560px;
+    background: #fff;
+    flex-direction: column;
+    border-radius: 14px;
+    padding: 1% 0%;
+    margin: 20px;
+}
+
+.plan-info-card .card-content {
+    justify-content: left;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+}
+
+.booking-section {
+    color: #12130F;
+    min-height: 560px;
+    min-width: 300px;
+    max-width: auto;
+    background: #fff;
+    flex-direction: column;
+    border-radius: 14px;
+    padding: 1% 0%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.booking-form {
+    justify-content: left;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+}
+
+.card-heading {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+/* Rides section */
+.attractions-main {
+    margin: 5em 0;
+    padding: 2% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.attractions-filter {
+    color: #12130F;
+    min-height: 560px;
+    min-width: 300px;
+    max-width: auto;
+    background: #fff;
+    flex-direction: column;
+    border-radius: 14px;
+    padding: 1% 0%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.attractions-search {
+    margin: 5%;
 }

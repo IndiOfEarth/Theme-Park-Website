@@ -24,21 +24,24 @@
 <body>
     <!-- Sidebar navigation -->
     <nav class="side-nav">
-        <!-- Name, Logo-->
-        <div class="nav-logo">
-            <a href="./index.html">
-                <h1 class="nav-heading"><span>The</span>NEXUS</h1>
-            </a>
-        </div>
-        <!-- Main navigation items -->
-        <div class="quick-links">
-            <ul>
-                <li><a href="./attractions.html">Explore</a></li>
-                <li><a href="#">Map</a></li>
-                <li><a href="./plan.html">Plan a Trip</a></li>
-                <!-- Moved into attractions page. Now acts as a link to the section.-->
-                <li><a href="./about.html">About us</a></li>
-            </ul>
+        <div class="top-nav-content">
+            <!-- Name, Logo-->
+            <div class="nav-logo">
+                <a href="./index.html">
+                    <h1 class="nav-heading"><span>The</span>NEXUS</h1>
+                </a>
+            </div>
+            <!-- Main navigation items -->
+            <div class="quick-links">
+                <ul>
+                    <li><a href="./plan.html">Explore</a></li>
+                    <!-- Hyperlink to map section of main page -->
+                    <li><a href="./index.html#map-section">Map</a></li>
+                    <!-- Moved into attractions page. Now acts as a link to the section.-->
+                    <li><a href="./plan.html#plan-section">Plan a Trip</a></li>
+                    <li><a href="./about.html">About us</a></li>
+                </ul>
+            </div>
         </div>
         <!--Bottom part of nav bar  -->
         <div class="nav-footer">
@@ -102,6 +105,7 @@
             <div class="swiper mySwiper">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
+                        <!-- Slide Item -->
                         <div class="swiper-slide">
                             <div class="box">
                                 <div class="img">
@@ -119,6 +123,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Slide Item -->
                         <div class="swiper-slide">
                             <div class="box">
                                 <div class="img">
@@ -136,6 +141,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Slide Item -->
                         <div class="swiper-slide">
                             <div class="box">
                                 <div class="img">
@@ -153,6 +159,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Slide Item -->
                         <div class="swiper-slide">
                             <div class="box">
                                 <div class="img">
@@ -170,6 +177,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Slide Item -->
                         <div class="swiper-slide">
                             <div class="box">
                                 <div class="img">
@@ -187,6 +195,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Slide Item -->
                         <div class="swiper-slide">
                             <div class="box">
                                 <div class="img">
@@ -204,6 +213,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Slide Item -->
                         <div class="swiper-slide">
                             <div class="box">
                                 <div class="img">
@@ -229,13 +239,10 @@
                 <div class="swiper-pagination"></div>
             </div>
 
-
-
-
         </section>
 
         <!-- Map Section -->
-        <section class="park-map">
+        <section class="park-map" id="map-section">
             <!--Section Title -->
             <div class="section-title">
                 <img src="./images/Icons/map_24dp_FILL0_wght400_GRAD0_opsz24.svg">
