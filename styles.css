@@ -139,6 +139,15 @@ header p {
     position: relative;
 }
 
+.hero-image-explore {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/lunar-rover-adventure.jpg");
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .hero-text {
     position: relative;
     text-align: left;
@@ -191,6 +200,18 @@ header p {
 
 
 /* Map Section  */
+.filters {
+    background-color: #ffffff;
+    width: 350px;
+    border-radius: 10px;
+    margin-right: 10em;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .park-map {
     margin: 5em 0;
     padding: 2% 5%;
@@ -207,15 +228,18 @@ header p {
 }
 
 .map-options {
-    background-color: #d8d8d8;
+    background-color: #ffffff;
     width: 350px;
     border-radius: 10px;
-    margin-right: 10em;
     color: #000;
 }
 
+.map-options ul li {
+    margin: 20px 0;
+}
+
 .interactive-map {
-    background-color: #d8d8d8;
+    background-color: #ffffff;
     width: 55em;
     border-radius: 10px;
 }
@@ -245,7 +269,8 @@ header p {
 }
 
 .map-key ul li {
-    padding: 10px;
+    padding: 4px;
+    margin: 0px 1px;
 }
 
 
@@ -703,8 +728,6 @@ footer {
 
 /* plan section */
 .planner {
-    margin: 5em 0;
-    padding: 2% 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -747,7 +770,6 @@ footer {
     flex-direction: column;
     border-radius: 14px;
     padding: 1% 0%;
-    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -779,20 +801,117 @@ footer {
 
 .attractions-filter {
     color: #12130F;
-    min-height: 560px;
+    margin-top: 30px;
+    min-height: 100%;
     min-width: 300px;
     max-width: auto;
     background: #fff;
     flex-direction: column;
     border-radius: 14px;
     padding: 1% 0%;
-    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+
+    .map-options {
+        background-color: #d8d8d8;
+        width: 350px;
+        border-radius: 10px;
+        margin-right: 10em;
+        color: #000;
+    }
 }
 
 .attractions-search {
     margin: 5%;
+}
+
+/* TESTING */
+
+.explore-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.ride-card-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.ride-cards-section {
+    margin: 10em 0;
+    padding: 2% 5%;
+}
+
+.ride-card {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 30px 30px;
+}
+
+.ride-card-box {
+    height: 550px;
+    width: 400px;
+    background: #fff;
+    flex-direction: column;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.ride-card-box .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+}
+
+.ride-card-box .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.ride-card-box .info {
+    padding: 20px;
+}
+
+.ride-card-box .info h2 {
+    font-size: 35px;
+    font-weight: 600;
+    cursor: text;
+    margin-bottom: 5px;
+}
+
+.ride-card-box .info p {
+    font-size: 16px;
+    cursor: text;
+}
+
+.ride-card-box .info .btn {
+    margin-top: 10px;
+    top: 22em;
+}
+
+.ride-card-box .info .btn button {
+    background: #FDCA40;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.ride-card-box .info .btn button:hover {
+    background: #f8ce5d;
+
 }
